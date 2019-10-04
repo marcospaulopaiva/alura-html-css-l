@@ -9,67 +9,61 @@ h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
-main h1 {
+.titulo-principal {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
 	padding: 25px;
-    border-bottom: 10px solid black;
+	border-bottom: 10px solid black;
 	font-size: 60px;
 	text-transform: uppercase;
 }
 
 p {
-    text-align: justify;
-    margin: 20px 0;
+	text-align: justify;
+	margin: 20px 0;
 }
 
-blockquote {
+.citacao-bio {
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
 	width: 250px;
-    box-sizing: border-box;
-    margin: 20px 40px;
+	box-sizing: border-box;
+	margin: 20px 40px;
 }
 
-aside {
+.navegacao-site {
+	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
 }
 
-footer {
+.rodape-pagina {
 	background-color: #000;
 	color: #F2FFFC;
-}
-
-nav a {
-	color: #F2FFFC;
+	clear: both;
 }
 
 main a {
 	color: #851944;
 }
 
-aside a {
+.navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-blockquote, aside, footer {
+.citacao-bio, .navegacao-site, .rodape-pagina {
     padding: 20px;
 }
 
-main div {
+.container {
 	width: 720px;
-    margin: auto;
-    padding: 30px 0;
+	margin: auto;
+	padding: 30px 0;
 }
 
-aside {
-	text-align: center;
-}
-
-aside h1 {
+.navegacao-site h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
 }
@@ -82,18 +76,39 @@ em {
 	font-style: italic;
 }
 
-h2 {
+.subtitulo-texto {
 	font-size: 30px;
+	clear: both;
 }
-.icones-sociais li {
+
+.icones-redes-sociais li {
 	display: inline-block;
 }
 
-.icones-sociais a {
+.artigo {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.leia-mais {
+	padding: 8px;
+	margin: 16px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	background-color: #E6E7E8;
+}
+
+nav a {
+	text-transform: lowercase;
+}
+
+.icones-redes-sociais a {
 	width: 40px;
 	height: 40px;
-	display: inline-block;
-	text-indent: -9999px;
+	display: block;
+	text-indent: -99999px;
 }
 
 .github {
@@ -106,4 +121,30 @@ h2 {
 
 .linkedin {
 	background-image: url(linkedin.png);
+}
+
+.fiat {
+	float: right;
+}
+
+.petrobras {
+	float: left;
+}
+
+main {
+	float: left;
+	width: 85%;
+}
+
+.minha-foto, .navegacao-site {
+	float: right;
+	width: 15%;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+cite {
+	font-style: italic;
+	float: right;
 }
